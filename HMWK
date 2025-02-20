@@ -114,11 +114,33 @@ def z_score(x, mu, sigma):
     # Participating group member names go in this comment              
 
     # Your code goes between this comment and the return statement
-# and_gate for population 1, 2, 3 to get sum
-# data_set = population1, population2, population3
+
     # Formula for z-score of populaton 
 
     z_score = (x - mu) / sigma
-    
+
     return z_score # Place the calculated z-score result between the return statement and this comment so it will be returned by the z_score function
-print (z_score)
+    
+total_population = (population1 + population2 + population3)
+average = (mean(total_population))
+standard_dev = stdev(total_population, average)
+min = least(total_population)
+z_min = z_score(min, average, standard_dev)
+z_stddev = z_score(standard_dev, average, standard_dev)
+
+#print (mean(population1))
+#print (mean(population2))
+#print (mean(population3))
+
+print("Average:\t\t\t", (average))
+print()
+print("Standard Deviation:\t\t", (standard_dev))
+print()
+print("Z-Score for least value\t\t", (z_min))
+print()
+print("Z-Score for Standard Deviation\t", (z_stddev))
+
+
+
+#print (least(population1))
+#print (greatest(population1))
