@@ -114,8 +114,8 @@ def z_score(x, mu, sigma):
     # Participating group member names go in this comment              
 
     # Your code goes between this comment and the return statement
-
-
+# and_gate for population 1, 2, 3 to get sum
+# data_set = population1, population2, population3
     # Formula for z-score of populaton 
 
     z_score = (x - mu) / sigma
